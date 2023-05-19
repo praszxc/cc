@@ -17,18 +17,19 @@ use App\Http\Controllers\indexController;
 |
 */
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard.index');
-// });
+Route::get('/', function () {
+    return view('dashboard.index', [
+        "title" => "index"
+    ]);
+});
 
-//Route::view('list','list');
-Route::get('dashboard',[indexController::class,'Show']);
 
-//Route::view('list','list');
-Route::get('pendidikan',[sebaranpendidikanController::class,'Show']);
+// Route::get('/',[indexController::class,'Show']);
 
-Route::get('pekerjaan',[sebaranpekerjaanController::class,'Show']);
+Route::get('/pendidikan',[sebaranpendidikanController::class,'Show']);
 
-Route::get('penghasilan',[penghasilanController::class,'Show']);
+Route::get('/pekerjaan',[sebaranpekerjaanController::class,'Show']);
 
-Route::get('profilpenduduk',[profilpendudukController::class,'Show']);
+Route::get('/penghasilan',[penghasilanController::class,'Show']);
+
+Route::get('/profilpenduduk',[profilpendudukController::class,'Show']);

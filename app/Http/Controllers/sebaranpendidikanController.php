@@ -8,8 +8,10 @@ class sebaranpendidikanController extends Controller
 {
     //
     function show(){
-        //return sebaranpekerjaan::all();
-        $datapendidikan = sebaranpendidikan::all();
-        return view('dashboard.pendidikan',['sebaranpendidikan'=>$datapendidikan]);
+        $datapendidikan = sebaranpendidikan::paginate(10);
+        return view('dashboard.pendidikan',[
+            "title" => "pendidikan",
+            'sebaranpendidikan'=>$datapendidikan
+        ]);
     }
 }

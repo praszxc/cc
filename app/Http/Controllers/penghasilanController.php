@@ -10,6 +10,9 @@ class penghasilanController extends Controller
     function show(){
         //return sebaranpekerjaan::all();
         $datapenghasilan = penghasilan::all();
-        return view('dashboard.penghasilan',['penghasilan'=>$datapenghasilan]);
+        return view('dashboard.penghasilan',[
+            "title" => "penghasilan",
+            'penghasilan'=>$datapenghasilan
+        ]);
     }
 }

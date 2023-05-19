@@ -32,31 +32,31 @@
       <div class="position-sticky pt-3">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/dashboard">
+            <a class="nav-link {{ ($title === "index") ? 'active' : '' }} aria-current="page" href="/">
               <span data-feather="home"></span>
               Dashboard
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/pekerjaan">
+            <a class="nav-link {{ ($title === "pekerjaan") ? 'active' : '' }} aria-current="page" href="/pekerjaan">
               <span data-feather="briefcase"></span>
               Sebaran Pekerjaan
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/pendidikan">
+            <a class="nav-link {{ ($title === "pendidikan") ? 'active' : '' }}  aria-current="page" href="/pendidikan">
               <span data-feather="book-open"></span>
               Sebaran Pendidikan
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/penghasilan">
+            <a class="nav-link {{ ($title === "penghasilan") ? 'active' : '' }}  aria-current="page" href="/penghasilan">
               <span data-feather="dollar-sign"></span>
               Penghasilan
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/profilpenduduk">
+            <a class="nav-link {{ ($title === "profilpenduduk") ? 'active' : '' }} aria-current="page"  href="/profilpenduduk">
               <span data-feather="users"></span>
               Profil Kependudukan
             </a>

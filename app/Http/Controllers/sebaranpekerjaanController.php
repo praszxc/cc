@@ -9,7 +9,10 @@ class sebaranpekerjaanController extends Controller
     //
     function show(){
         //return sebaranpekerjaan::all();
-        $datapekerjaan = sebaranpekerjaan::all();
-        return view('dashboard.listpekerjaan',['sebaranpekerjaan'=>$datapekerjaan]);
+        $datapekerjaan = sebaranpekerjaan::paginate(10);
+        return view('dashboard.listpekerjaan',[
+            "title" => "pekerjaan",
+            'sebaranpekerjaan'=>$datapekerjaan
+        ]);
     }
 }

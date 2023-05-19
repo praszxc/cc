@@ -21,7 +21,7 @@
           </thead>
           <tbody class="table-group-divider">
             @foreach ($sebaranpekerjaan as $sp)
-            <tr>
+            <tr style="background-color: <?php echo $sp['Wiraswasta'] <= 5000 ? '#E74646' : '#FFFFFF' ?>">
               <td>{{$sp['Kecamatan']}}</td>
               <td>{{$sp['Kelurahan']}}</td>
               <td>{{$sp['Aparatur Pejabat Negara']}}</td>
@@ -38,5 +38,6 @@
             @endforeach
           </tbody>
         </table>
+        {{$sebaranpekerjaan->links()}}
       </div>
 @endsection

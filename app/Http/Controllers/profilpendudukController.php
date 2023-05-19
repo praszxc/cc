@@ -9,7 +9,10 @@ class profilpendudukController extends Controller
     //
     function show(){
         //return sebaranpekerjaan::all();
-        $dataprofilpenduduk = profilpenduduk::all();
-        return view('dashboard.profilpenduduk',['profilpenduduk'=>$dataprofilpenduduk]);
+        $dataprofilpenduduk = profilpenduduk::paginate(10);
+        return view('dashboard.profilpenduduk',[
+            "title" => "profilpenduduk",
+            'profilpenduduk'=>$dataprofilpenduduk
+        ]);
     }
 }

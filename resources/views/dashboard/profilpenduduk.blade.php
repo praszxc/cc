@@ -20,5 +20,6 @@
             @endforeach
           </tbody>
         </table>
+        {{$profilpenduduk->links()}}
       </div>
 @endsection

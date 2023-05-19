@@ -38,5 +38,6 @@
             @endforeach
           </tbody>
         </table>
+        {{$sebaranpendidikan->links()}}
       </div>
 @endsection
