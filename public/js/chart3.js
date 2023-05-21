@@ -1,12 +1,20 @@
-var ctx2 = document.getElementById('doughnut').getContext('2d');
-var myChart2 = new Chart(ctx2, {
+var ctx3 = document.getElementById('doughnut2').getContext('2d');
+var myChart3 = new Chart(ctx3, {
     type: 'doughnut',
     data: {
-        labels: ['ASN', 'Wiraswasta', 'Pertanian & Peternakan', 'Pelajar & Mahasiswa', 'Pensiunan', 'Pekerjaan lainnya', 'Tidak bekerja'],
+        labels: ['Belum Sekolah', 
+                 'Tidak Tamat SD', 
+                  'Tamat SD', 
+                  'SMP', 
+                  'SMA', 
+                  'Diploma III',
+                   'Strata 1',
+                   'Strata 2'
+                ],
 
         datasets: [{
-            label: 'pekerjaan',
-            data: [497, 5390, 9, 3584, 238, 3595, 3234],
+            label: 'pendidikan',
+            data: [2386, 1633, 2099, 2245, 5068, 598, 1519, 160],
             backgroundColor: [
                 '#1D267D',
                 '#FF6969',

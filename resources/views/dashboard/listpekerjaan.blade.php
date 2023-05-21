@@ -38,6 +38,9 @@
             @endforeach
           </tbody>
         </table>
+        <div>
+          <h6>NB : Tabel di merahkan berdasarkan angka Wiraswasta <= 5000</h6>
+        </div>
         {{$sebaranpekerjaan->links()}}
       </div>
 @endsection

@@ -29,7 +29,7 @@
   </div>
   <div class="charts">
     <div class="chart">
-        <h2>Rata-rata Pertumbuhan Ekonomi</h2>
+        <h2>Laju Pertumbuhan Penduduk</h2>
         <div>
             <canvas id="lineChart"></canvas>
         </div>
@@ -39,6 +39,22 @@
         <div>
             <canvas id="doughnut"></canvas>
         </div>
+    </div>
+</div>
+<div class="chartss">
+    <div class="chart doughnut-chart">
+        <h4>Sebaran Pendidikan</h4>
+        <div>
+        <canvas id="doughnut2"></canvas>
+        </div>
+    </div>
+    <div class="chart doughnut-chart">
+        <h4>Sebaran Penduduk</h4>
+        <img src="/img/penduduk berdasarkan ktp.png" alt="" width="280px" height="300px">
+    </div>
+    <div class="chart doughnut-chart">
+        <h4>Sebaran Penghasilan</h4>
+        <img src="/img/penghasilan.png" alt="" width="280px" height="350px">
     </div>
 </div>
 </div>

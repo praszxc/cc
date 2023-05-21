@@ -18,14 +18,13 @@ use App\Http\Controllers\dashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard.index', [
-        "title" => "index"
-    ]);
-});
+// Route::get('/', function () {
+//     return view('dashboard.index', [
+//         "title" => "index"
+//     ]);
+// });
 
-
-// Route::get('/',[indexController::class,'Show']);
+Route::get('/',[dashboardController::class,'Show']);
 
 Route::get('/pendidikan',[sebaranpendidikanController::class,'Show']);
 
