@@ -8,7 +8,7 @@
               <th scope="col">Kecamatan</th>
               <th scope="col">Kelurahan</th>
               <th scope="col">Belum Sekolah</th>
-              <th scope="col">Belum/Tidak Tamat SD</th>
+              <th scope="col">Tidak Tamat SD</th>
               <th scope="col">Tamat SD</th>
               <th scope="col">SMP</th>
               <th scope="col">SMA</th>
@@ -21,7 +21,7 @@
           </thead>
           <tbody class="table-group-divider">
             @foreach ($sebaranpendidikan as $sp)
-            <tr>
+            <tr style="background-color: <?php echo $sp['Belum/Tidak Tamat SD'] >= 2000 ? '#E74646' : '#FFFFFF' ?>">
               <td>{{$sp['Kecamatan']}}</td>
               <td>{{$sp['Kelurahan']}}</td>
               <td>{{$sp['Belum Sekolah']}}</td>

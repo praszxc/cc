@@ -5,7 +5,8 @@ use App\Http\Controllers\sebaranpekerjaanController;
 use App\Http\Controllers\sebaranpendidikanController;
 use App\Http\Controllers\penghasilanController;
 use App\Http\Controllers\profilpendudukController;
-use App\Http\Controllers\indexController;
+use App\Http\Controllers\dashboardController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +34,5 @@ Route::get('/pekerjaan',[sebaranpekerjaanController::class,'Show']);
 Route::get('/penghasilan',[penghasilanController::class,'Show']);
 
 Route::get('/profilpenduduk',[profilpendudukController::class,'Show']);
+
+Route::get('/dashboard',[dashboardController::class,'Show']);
